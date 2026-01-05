@@ -167,10 +167,16 @@ st.markdown("""
         font-weight: 700 !important;
     }
 
-    /* Hide default streamlit elements */
+    /* Hide specific default elements but preserve sidebar toggle */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    header {visibility: hidden;}
+    
+    /* Ensure Sidebar Toggle is always visible and premium */
+    button[kind="header"] {
+        color: #00d2ff !important;
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        border-radius: 50% !important;
+    }
 
     /* General Typography enhancements */
     h1, h2, h3 {

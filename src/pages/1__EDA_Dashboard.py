@@ -67,6 +67,17 @@ st.markdown("""
         z-index: -1;
     }
 
+    /* Hide specific default elements but preserve sidebar toggle */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    
+    /* Ensure Sidebar Toggle is always visible and premium */
+    button[kind="header"] {
+        color: #00d2ff !important;
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        border-radius: 50% !important;
+    }
+
     /* Ambient Background Animation */
     .stApp::before {
         content: "";
